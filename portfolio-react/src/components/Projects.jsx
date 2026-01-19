@@ -36,6 +36,9 @@ const Projects = () => {
                                 <span className="text-[10px] bg-white/10 px-2 py-1 rounded text-gray-300">TypeScript</span>
                                 <span className="text-[10px] bg-white/10 px-2 py-1 rounded text-gray-300">Python ML</span>
                             </div>
+                            <a href="https://github.com/siddhesh-71/Data-Vizzard-Al-Data-Visualization-Platform" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-indigo-400 hover:text-indigo-300 transition-colors">
+                                <i className="fab fa-github"></i> View on GitHub
+                            </a>
                         </div>
                     </div>
 
@@ -65,6 +68,9 @@ const Projects = () => {
                                 <span className="text-[10px] bg-white/10 px-2 py-1 rounded text-gray-300">WebRTC</span>
                                 <span className="text-[10px] bg-white/10 px-2 py-1 rounded text-gray-300">Machine Learning</span>
                             </div>
+                            <a href="https://github.com/siddhesh-71/Care-Connect" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-indigo-400 hover:text-indigo-300 transition-colors">
+                                <i className="fab fa-github"></i> View on GitHub
+                            </a>
                         </div>
                     </div>
                 </div>

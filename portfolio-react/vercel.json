@@ -8,27 +8,18 @@
       }
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.+)",
-      "destination": "/index.html"
-    }
-  ],
-  "headers": [
+      "src": "/SiddheshGuptaResume.pdf",
+      "dest": "/SiddheshGuptaResume.pdf",
+      "headers": {
+        "content-type": "application/pdf",
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
     {
-      "source": "/SiddheshGuptaResume.pdf",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/pdf"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  ]
 }

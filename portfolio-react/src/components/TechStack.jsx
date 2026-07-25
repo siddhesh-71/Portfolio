@@ -8,6 +8,7 @@ const TechStack = () => {
         { name: 'React', icon: 'fab fa-react', color: 'text-blue-400' },
         { name: 'Node.js', icon: 'fab fa-node', color: 'text-green-500' },
         { name: 'MySQL', icon: 'fas fa-database', color: 'text-orange-400' },
+        { name: 'MongoDB', icon: 'fas fa-database', color: 'text-green-500' },
         { name: 'Firebase', icon: 'fas fa-fire', color: 'text-yellow-500' },
         { name: 'Git', icon: 'fab fa-git-alt', color: 'text-red-500' },
     ];

@@ -2,45 +2,83 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relative pt-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
-                <div className="md:w-1/2 text-center md:text-left z-10">
-                    <div className="inline-block px-4 py-2 rounded-full glass border border-indigo-500/30 mb-6 animate-bounce duration-[3000ms]">
-                        <span className="text-indigo-300 text-sm font-semibold">👋 Hello, I'm Siddhesh</span>
-                    </div>
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                        Full Stack <br />
-                        <span className="text-gradient">Developer</span> & <br />
-                        ML Enthusiast
-                    </h1>
-                    <p className="text-gray-400 text-lg md:text-xl mb-8 max-w-lg mx-auto md:mx-0">
-                        Skilled in building responsive web applications, REST APIs, and AI-based systems. Experienced with
-                        React, FastAPI, Node.js, and Machine Learning.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start flex-wrap">
-                        <a href="#projects" className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 font-semibold shadow-lg shadow-indigo-500/40 transition-all transform hover:scale-105 text-center">
-                            View Projects
-                        </a>
-                        <a href="#contact" className="px-8 py-3 rounded-full glass hover:bg-white/10 font-semibold border border-white/10 transition-all text-center">
-                            Contact Me
-                        </a>
-                        <a href="/SiddheshGuptaResume.pdf" download="Siddhesh_Gupta_Resume.pdf" className="px-8 py-3 rounded-full glass hover:bg-indigo-500/20 font-semibold border border-indigo-500/50 transition-all text-center flex items-center justify-center gap-2 group">
-                            <span>Download CV</span>
-                            <i className="fas fa-download text-indigo-400 group-hover:translate-y-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-                {/* Decorative Element for Hero */}
-                <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center z-10 pointer-events-none">
-                    <div className="relative w-64 h-64 md:w-96 md:h-96 glass-card rounded-full flex items-center justify-center animate-float border-2 border-indigo-500/20 shadow-[0_0_100px_-20px_rgba(99,102,241,0.3)]">
-                        <div className="text-center p-8">
-                            <i className="fas fa-laptop-code text-6xl text-indigo-400 mb-4"></i>
-                            <h3 className="text-2xl font-bold text-white">Problem Solver</h3>
-                            <p className="text-gray-400 text-sm mt-2">Java • Python • JS</p>
+        <section id="home" className="min-h-screen flex items-center relative pt-20">
+            <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-16">
+
+                    {/* LEFT — Text Content */}
+                    <div className="flex flex-col items-start">
+
+                        {/* Badge */}
+                        <div className="flex items-center gap-3 bg-slate-800/60 border border-white/10 rounded-2xl px-4 py-3 mb-7 backdrop-blur-sm">
+                            <img
+                                src="https://ui-avatars.com/api/?name=SG&background=18181b&color=fff&size=80"
+                                alt="SG"
+                                className="w-10 h-10 rounded-lg object-cover"
+                            />
+                            <q className="text-sm text-gray-300 font-medium">Full Stack &amp; ML Enthusiast</q>
+                        </div>
+
+                        {/* Title */}
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight shiny-hero-text">
+                            Hi I'm Siddhesh Gupta
+                        </h1>
+
+                        {/* Description */}
+                        <p className="text-gray-400 text-base md:text-lg leading-relaxed mb-8 max-w-lg">
+                            A Full Stack Developer skilled in building responsive web applications,
+                            REST APIs, and AI-driven systems. Passionate about solving complex
+                            problems through code.
+                        </p>
+
+                        {/* Buttons */}
+                        <div className="flex flex-wrap gap-4">
+                            <a
+                                href="/SiddheshGuptaResume.pdf"
+                                download="Siddhesh_Gupta_Resume.pdf"
+                                className="flex items-center gap-2 px-7 py-3 rounded-full bg-slate-800/70 border border-white/15 text-white font-semibold text-sm hover:bg-slate-700/80 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
+                            >
+                                <span className="shiny-hero-text">Download CV</span>
+                                <i className="fas fa-download text-xs text-gray-400"></i>
+                            </a>
+                            <a
+                                href="#projects"
+                                className="flex items-center gap-2 px-7 py-3 rounded-full bg-slate-800/70 border border-white/15 text-white font-semibold text-sm hover:bg-slate-700/80 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
+                            >
+                                <span className="shiny-hero-text">Explore My Projects</span>
+                            </a>
                         </div>
                     </div>
+
+                    {/* RIGHT — Original Decorative Float */}
+                    <div className="md:w-full mt-12 md:mt-0 flex justify-center md:justify-end z-10 pointer-events-none">
+                        <div className="relative w-64 h-64 md:w-96 md:h-96 glass-card rounded-full flex items-center justify-center animate-float border-2 border-indigo-500/20 shadow-[0_0_100px_-20px_rgba(99,102,241,0.3)]">
+                            <div className="text-center p-8">
+                                <i className="fas fa-laptop-code text-6xl text-indigo-400 mb-4"></i>
+                                <h3 className="text-2xl font-bold text-white">Problem Solver</h3>
+                                <p className="text-gray-400 text-sm mt-2">Java • Python • JS</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            {/* Shiny text CSS */}
+            <style>{`
+                .shiny-hero-text {
+                    background: linear-gradient(90deg, #ccc 0%, #fff 40%, #888 60%, #fff 80%, #ccc 100%);
+                    background-size: 200% auto;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    animation: heroShine 3s linear infinite;
+                }
+                @keyframes heroShine {
+                    0%   { background-position: 0% center; }
+                    100% { background-position: 200% center; }
+                }
+            `}</style>
         </section>
     );
 };

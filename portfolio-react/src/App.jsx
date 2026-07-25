@@ -1,8 +1,8 @@
 import ThreeBackground from './components/ThreeBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import TechStack from './components/TechStack';
 import About from './components/About';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -13,8 +13,8 @@ function App() {
       <ThreeBackground />
       <Navbar />
       <Hero />
-      <TechStack />
       <About />
+      <Experience />
       <Projects />
       <Contact />
       <Footer />

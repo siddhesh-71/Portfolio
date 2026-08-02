@@ -185,21 +185,30 @@ const About = () => {
                     {/* Lanyard Card */}
                     <div 
                         ref={cardRef}
-                        className="w-[220px] bg-slate-800/90 backdrop-blur-sm rounded-[20px] border border-white/10 overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.6),0_0_30px_rgba(59,130,246,0.15)] cursor-grab active:cursor-grabbing"
+                        className="w-[220px] rounded-[20px] border border-white/10 overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.6),0_0_30px_rgba(59,130,246,0.15)] cursor-grab active:cursor-grabbing relative"
                         style={{ transformStyle: 'preserve-3d' }}
                     >
-                        <div className="w-[22px] h-[22px] rounded-full bg-slate-900 border-2 border-white/10 mx-auto mt-4" />
-                        <div className="p-6 flex flex-col items-center gap-3 text-center">
-                            <div className="w-20 h-20 rounded-full object-cover border-2 border-blue-500 bg-blue-600 flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-blue-500/30">
-                                SI
-                            </div>
-                            <div className="mt-2">
-                                <p className="font-bold text-lg text-white">Siddhesh Gupta</p>
-                                <p className="text-xs text-gray-400 mt-1">B.Tech CSE Student</p>
-                            </div>
-                            <div className="flex gap-4 mt-2">
-                                <a href="https://github.com/siddhesh-71" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-xl transition-colors"><i className="fab fa-github"></i></a>
-                                <a href="https://linkedin.com/in/siddhesh-gupta" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500 text-xl transition-colors"><i className="fab fa-linkedin"></i></a>
+                        {/* Full portrait photo */}
+                        <img
+                            src={`/profile.png?v=${Date.now()}`}
+                            alt="Siddhesh Gupta"
+                            className="w-full h-[320px] object-cover object-top block select-none"
+                            draggable="false"
+                            style={{ WebkitUserDrag: 'none', pointerEvents: 'none' }}
+                        />
+
+                        {/* Loop hole on top of photo */}
+                        <div className="absolute top-3 left-0 right-0 z-20 flex justify-center">
+                            <div className="w-[20px] h-[20px] rounded-full bg-black/70 border-2 border-white/30 shadow-inner" />
+                        </div>
+
+                        {/* Bottom gradient + info overlay */}
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent px-4 pt-8 pb-4 flex flex-col items-center gap-1 text-center z-10">
+                            <p className="font-bold text-base text-white drop-shadow-lg">Siddhesh Gupta</p>
+                            <p className="text-[10px] text-white/60 tracking-widest uppercase">B.Tech CSE Student</p>
+                            <div className="flex gap-4 mt-1.5">
+                                <a href="https://github.com/siddhesh-71" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white text-lg transition-colors drop-shadow"><i className="fab fa-github"></i></a>
+                                <a href="https://linkedin.com/in/siddhesh-gupta" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-blue-400 text-lg transition-colors drop-shadow"><i className="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>

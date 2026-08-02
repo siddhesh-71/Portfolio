@@ -34,8 +34,9 @@ const Hero = () => {
                         {/* Buttons */}
                         <div className="flex flex-wrap gap-4">
                             <a
-                                href="/SiddheshGuptaResume.pdf"
-                                download="Siddhesh_Gupta_Resume.pdf"
+                                href="https://drive.google.com/file/d/1kRlK7p90MnJBdKzrdToabuKbEm1pmZFv/view?usp=drive_link"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="flex items-center gap-2 px-7 py-3 rounded-full bg-slate-800/70 border border-white/15 text-white font-semibold text-sm hover:bg-slate-700/80 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
                             >
                                 <span className="shiny-hero-text">Download CV</span>
